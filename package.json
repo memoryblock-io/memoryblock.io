@@ -1,0 +1,15 @@
+{
+  "name": "memoryblock.io",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The official website for memoryblock.",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "author": "ghazi",
+  "license": "MIT"
+}
