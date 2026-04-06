@@ -132,8 +132,13 @@
                 <h2 class="gradient-text">Autonomic Pulse System</h2>
                 <p>Background workers that wake up, execute tasks, and alert you only when needed. Scripts, crons, alerts, and webhooks running silently without wasting human attention.</p>
                 <div class="pulse-code monospace">
-                    <span class="dim">// Schedule a server health check every hour</span><br>
-                    mblk pulse set health-checker --cron "0 * * * *" --instruction "Run uptime checks"
+                    <span class="dim">/* Monitor task: Registering autonomic pulse */</span><br>
+                    <span class="primary">set_pulse</span>({<br>
+                    &nbsp;&nbsp;id: <span class="cyan">"uptime-ping"</span>,<br>
+                    &nbsp;&nbsp;type: <span class="cyan">"cron"</span>,<br>
+                    &nbsp;&nbsp;cron_expression: <span class="cyan">"0 * * * *"</span>,<br>
+                    &nbsp;&nbsp;instruction: <span class="cyan">"Verify server connection"</span><br>
+                    });
                 </div>
             </div>
             <div class="pulse-visual">
