@@ -297,10 +297,11 @@ h1, h2, h3, .logo-text {
     font-size: 0.85rem;
 }
 
+.cyan { color: #00d2ff; }
+.green { color: #27c93f; }
+.dim { color: var(--text-dim); }
+.primary { color: var(--primary); }
 .line { margin-bottom: 6px; }
-.line .green { color: #27c93f; }
-.line .cyan { color: #00d2ff; }
-.line .dim { color: var(--text-dim); }
 .line .symbol { color: var(--primary); margin-right: 8px; }
 
 /* Features Grid */
