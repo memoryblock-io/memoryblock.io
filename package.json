@@ -2,7 +2,7 @@
   "name": "memoryblock.io",
   "version": "0.0.0",
   "private": true,
-  "description": "The official website for memoryblock.",
+  "description": "Run isolated AI workspaces locally with persistent memory, multi-agent coordination, and optimised token usage. Built for low overhead and full control.",
   "main": "index.html",
   "scripts": {
     "start": "serve ."
