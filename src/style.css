@@ -540,12 +540,160 @@ h1, h2, h3, .logo-text {
 
 /* Responsive */
 @media (max-width: 900px) {
-    .hero .container, .auto-pulse-area, .footer-grid {
+    .container {
+        padding: 0 32px;
+    }
+
+    .hero .container {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 48px;
     }
-    
-    .hero-title { font-size: 3rem; }
-    .hero-subtitle, .command-box, .cta-actions { margin-left: auto; margin-right: auto; }
-    .auto-pulse-area { padding: 40px 24px; }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .command-box {
+        margin: 0 auto;
+    }
+
+    .auto-pulse-area {
+        grid-template-columns: 1fr;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .pulse-visual {
+        order: -1;
+        height: 200px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        text-align: center;
+    }
+
+    .footer-brand .logo {
+        justify-content: center;
+    }
+
+    .footer-brand p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --navbar-height: 64px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .navbar .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 120px 0 60px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .command-box {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 14px;
+    }
+
+    .command-box code {
+        font-size: 0.8rem;
+        overflow-x: auto;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 24px;
+    }
+
+    .auto-pulse-area {
+        padding: 32px 20px;
+        border-radius: 20px;
+    }
+
+    .pulse-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .pulse-code {
+        font-size: 0.75rem;
+        padding: 16px;
+        text-align: left;
+    }
+
+    .cta-card {
+        padding: 48px 24px;
+    }
+
+    .cta-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
 }
